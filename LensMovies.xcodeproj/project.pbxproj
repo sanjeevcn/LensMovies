@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFBDCE0927CC0EC6000FF866 /* LensMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE0827CC0EC6000FF866 /* LensMoviesApp.swift */; };
+		AFBDCE0B27CC0EC7000FF866 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE0A27CC0EC7000FF866 /* ContentView.swift */; };
+		AFBDCE0D27CC0ECF000FF866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBDCE0C27CC0ECF000FF866 /* Assets.xcassets */; };
+		AFBDCE1027CC0ED0000FF866 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBDCE0F27CC0ED0000FF866 /* Preview Assets.xcassets */; };
+		AFBDCE1A27CC0ED1000FF866 /* LensMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE1927CC0ED1000FF866 /* LensMoviesTests.swift */; };
+		AFBDCE2427CC0ED1000FF866 /* LensMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE2327CC0ED1000FF866 /* LensMoviesUITests.swift */; };
+		AFBDCE2627CC0ED1000FF866 /* LensMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE2527CC0ED1000FF866 /* LensMoviesUITestsLaunchTests.swift */; };
+		AFBDCE3327CC0F36000FF866 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3227CC0F36000FF866 /* DataModel.swift */; };
+		AFBDCE3527CC0F7D000FF866 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3427CC0F7D000FF866 /* WatchList.swift */; };
+		AFBDCE3727CC1058000FF866 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3627CC1058000FF866 /* Constants.swift */; };
+		AFBDCE3A27CC10CD000FF866 /* LensMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3827CC10CD000FF866 /* LensMovies.xcdatamodeld */; };
+		AFBDCE3C27CC12FA000FF866 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3B27CC12FA000FF866 /* ServiceHandler.swift */; };
+		AFBDCE3E27CC130B000FF866 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3D27CC130B000FF866 /* CustomError.swift */; };
+		AFBDCE4027CC132C000FF866 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE3F27CC132C000FF866 /* ApiEndpoint.swift */; };
+		AFBDCE4227CC1496000FF866 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4127CC1495000FF866 /* MoviesModel.swift */; };
+		AFBDCE4827CC19C3000FF866 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4727CC19C3000FF866 /* MovieDetailView.swift */; };
+		AFBDCE4A27CC1A25000FF866 /* LensMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4927CC1A25000FF866 /* LensMovieViewModel.swift */; };
+		AFBDCE4C27CC1E54000FF866 /* ButtonStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4B27CC1E54000FF866 /* ButtonStyleModifier.swift */; };
+		AFBDCE4E27CC1E96000FF866 /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4D27CC1E96000FF866 /* AlertModifier.swift */; };
+		AFBDCE5027CC1F32000FF866 /* PopupModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE4F27CC1F32000FF866 /* PopupModifier.swift */; };
+		AFBDCE5227CC1F55000FF866 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE5127CC1F55000FF866 /* NavigationModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFBDCE1627CC0ED1000FF866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFBDCDFD27CC0EC6000FF866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFBDCE0427CC0EC6000FF866;
+			remoteInfo = LensMovies;
+		};
+		AFBDCE2027CC0ED1000FF866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFBDCDFD27CC0EC6000FF866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFBDCE0427CC0EC6000FF866;
+			remoteInfo = LensMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFBDCE0527CC0EC6000FF866 /* LensMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LensMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBDCE0827CC0EC6000FF866 /* LensMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensMoviesApp.swift; sourceTree = "<group>"; };
+		AFBDCE0A27CC0EC7000FF866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFBDCE0C27CC0ECF000FF866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFBDCE0F27CC0ED0000FF866 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFBDCE1527CC0ED1000FF866 /* LensMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBDCE1927CC0ED1000FF866 /* LensMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensMoviesTests.swift; sourceTree = "<group>"; };
+		AFBDCE1F27CC0ED1000FF866 /* LensMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBDCE2327CC0ED1000FF866 /* LensMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensMoviesUITests.swift; sourceTree = "<group>"; };
+		AFBDCE2527CC0ED1000FF866 /* LensMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFBDCE3227CC0F36000FF866 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AFBDCE3427CC0F7D000FF866 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
+		AFBDCE3627CC1058000FF866 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFBDCE3927CC10CD000FF866 /* LensMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LensMovies.xcdatamodel; sourceTree = "<group>"; };
+		AFBDCE3B27CC12FA000FF866 /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		AFBDCE3D27CC130B000FF866 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		AFBDCE3F27CC132C000FF866 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		AFBDCE4127CC1495000FF866 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		AFBDCE4727CC19C3000FF866 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		AFBDCE4927CC1A25000FF866 /* LensMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensMovieViewModel.swift; sourceTree = "<group>"; };
+		AFBDCE4B27CC1E54000FF866 /* ButtonStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleModifier.swift; sourceTree = "<group>"; };
+		AFBDCE4D27CC1E96000FF866 /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
+		AFBDCE4F27CC1F32000FF866 /* PopupModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupModifier.swift; sourceTree = "<group>"; };
+		AFBDCE5127CC1F55000FF866 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
+		AFBDCE5327CC20CD000FF866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFBDCE0227CC0EC6000FF866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1227CC0ED1000FF866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1C27CC0ED1000FF866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFBDCDFC27CC0EC6000FF866 = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE0727CC0EC6000FF866 /* LensMovies */,
+				AFBDCE1827CC0ED1000FF866 /* LensMoviesTests */,
+				AFBDCE2227CC0ED1000FF866 /* LensMoviesUITests */,
+				AFBDCE0627CC0EC6000FF866 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFBDCE0627CC0EC6000FF866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE0527CC0EC6000FF866 /* LensMovies.app */,
+				AFBDCE1527CC0ED1000FF866 /* LensMoviesTests.xctest */,
+				AFBDCE1F27CC0ED1000FF866 /* LensMoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFBDCE0727CC0EC6000FF866 /* LensMovies */ = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE5327CC20CD000FF866 /* Info.plist */,
+				AFBDCE0827CC0EC6000FF866 /* LensMoviesApp.swift */,
+				AFBDCE4D27CC1E96000FF866 /* AlertModifier.swift */,
+				AFBDCE4F27CC1F32000FF866 /* PopupModifier.swift */,
+				AFBDCE5127CC1F55000FF866 /* NavigationModifier.swift */,
+				AFBDCE4B27CC1E54000FF866 /* ButtonStyleModifier.swift */,
+				AFBDCE3227CC0F36000FF866 /* DataModel.swift */,
+				AFBDCE3627CC1058000FF866 /* Constants.swift */,
+				AFBDCE3827CC10CD000FF866 /* LensMovies.xcdatamodeld */,
+				AFBDCE3B27CC12FA000FF866 /* ServiceHandler.swift */,
+				AFBDCE3F27CC132C000FF866 /* ApiEndpoint.swift */,
+				AFBDCE4127CC1495000FF866 /* MoviesModel.swift */,
+				AFBDCE3D27CC130B000FF866 /* CustomError.swift */,
+				AFBDCE3427CC0F7D000FF866 /* WatchList.swift */,
+				AFBDCE0A27CC0EC7000FF866 /* ContentView.swift */,
+				AFBDCE4927CC1A25000FF866 /* LensMovieViewModel.swift */,
+				AFBDCE4727CC19C3000FF866 /* MovieDetailView.swift */,
+				AFBDCE0C27CC0ECF000FF866 /* Assets.xcassets */,
+				AFBDCE0E27CC0ED0000FF866 /* Preview Content */,
+			);
+			path = LensMovies;
+			sourceTree = "<group>";
+		};
+		AFBDCE0E27CC0ED0000FF866 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE0F27CC0ED0000FF866 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFBDCE1827CC0ED1000FF866 /* LensMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE1927CC0ED1000FF866 /* LensMoviesTests.swift */,
+			);
+			path = LensMoviesTests;
+			sourceTree = "<group>";
+		};
+		AFBDCE2227CC0ED1000FF866 /* LensMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFBDCE2327CC0ED1000FF866 /* LensMoviesUITests.swift */,
+				AFBDCE2527CC0ED1000FF866 /* LensMoviesUITestsLaunchTests.swift */,
+			);
+			path = LensMoviesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFBDCE0427CC0EC6000FF866 /* LensMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBDCE2927CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMovies" */;
+			buildPhases = (
+				AFBDCE0127CC0EC6000FF866 /* Sources */,
+				AFBDCE0227CC0EC6000FF866 /* Frameworks */,
+				AFBDCE0327CC0EC6000FF866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LensMovies;
+			productName = LensMovies;
+			productReference = AFBDCE0527CC0EC6000FF866 /* LensMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFBDCE1427CC0ED1000FF866 /* LensMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBDCE2C27CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMoviesTests" */;
+			buildPhases = (
+				AFBDCE1127CC0ED1000FF866 /* Sources */,
+				AFBDCE1227CC0ED1000FF866 /* Frameworks */,
+				AFBDCE1327CC0ED1000FF866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFBDCE1727CC0ED1000FF866 /* PBXTargetDependency */,
+			);
+			name = LensMoviesTests;
+			productName = LensMoviesTests;
+			productReference = AFBDCE1527CC0ED1000FF866 /* LensMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFBDCE1E27CC0ED1000FF866 /* LensMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBDCE2F27CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMoviesUITests" */;
+			buildPhases = (
+				AFBDCE1B27CC0ED1000FF866 /* Sources */,
+				AFBDCE1C27CC0ED1000FF866 /* Frameworks */,
+				AFBDCE1D27CC0ED1000FF866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFBDCE2127CC0ED1000FF866 /* PBXTargetDependency */,
+			);
+			name = LensMoviesUITests;
+			productName = LensMoviesUITests;
+			productReference = AFBDCE1F27CC0ED1000FF866 /* LensMoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFBDCDFD27CC0EC6000FF866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					AFBDCE0427CC0EC6000FF866 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					AFBDCE1427CC0ED1000FF866 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = AFBDCE0427CC0EC6000FF866;
+					};
+					AFBDCE1E27CC0ED1000FF866 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = AFBDCE0427CC0EC6000FF866;
+					};
+				};
+			};
+			buildConfigurationList = AFBDCE0027CC0EC6000FF866 /* Build configuration list for PBXProject "LensMovies" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFBDCDFC27CC0EC6000FF866;
+			productRefGroup = AFBDCE0627CC0EC6000FF866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFBDCE0427CC0EC6000FF866 /* LensMovies */,
+				AFBDCE1427CC0ED1000FF866 /* LensMoviesTests */,
+				AFBDCE1E27CC0ED1000FF866 /* LensMoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFBDCE0327CC0EC6000FF866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBDCE1027CC0ED0000FF866 /* Preview Assets.xcassets in Resources */,
+				AFBDCE0D27CC0ECF000FF866 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1327CC0ED1000FF866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1D27CC0ED1000FF866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFBDCE0127CC0EC6000FF866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBDCE3727CC1058000FF866 /* Constants.swift in Sources */,
+				AFBDCE3E27CC130B000FF866 /* CustomError.swift in Sources */,
+				AFBDCE4227CC1496000FF866 /* MoviesModel.swift in Sources */,
+				AFBDCE3C27CC12FA000FF866 /* ServiceHandler.swift in Sources */,
+				AFBDCE4E27CC1E96000FF866 /* AlertModifier.swift in Sources */,
+				AFBDCE0B27CC0EC7000FF866 /* ContentView.swift in Sources */,
+				AFBDCE5027CC1F32000FF866 /* PopupModifier.swift in Sources */,
+				AFBDCE4827CC19C3000FF866 /* MovieDetailView.swift in Sources */,
+				AFBDCE3327CC0F36000FF866 /* DataModel.swift in Sources */,
+				AFBDCE4A27CC1A25000FF866 /* LensMovieViewModel.swift in Sources */,
+				AFBDCE3527CC0F7D000FF866 /* WatchList.swift in Sources */,
+				AFBDCE4C27CC1E54000FF866 /* ButtonStyleModifier.swift in Sources */,
+				AFBDCE3A27CC10CD000FF866 /* LensMovies.xcdatamodeld in Sources */,
+				AFBDCE0927CC0EC6000FF866 /* LensMoviesApp.swift in Sources */,
+				AFBDCE5227CC1F55000FF866 /* NavigationModifier.swift in Sources */,
+				AFBDCE4027CC132C000FF866 /* ApiEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1127CC0ED1000FF866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBDCE1A27CC0ED1000FF866 /* LensMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBDCE1B27CC0ED1000FF866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBDCE2427CC0ED1000FF866 /* LensMoviesUITests.swift in Sources */,
+				AFBDCE2627CC0ED1000FF866 /* LensMoviesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFBDCE1727CC0ED1000FF866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFBDCE0427CC0EC6000FF866 /* LensMovies */;
+			targetProxy = AFBDCE1627CC0ED1000FF866 /* PBXContainerItemProxy */;
+		};
+		AFBDCE2127CC0ED1000FF866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFBDCE0427CC0EC6000FF866 /* LensMovies */;
+			targetProxy = AFBDCE2027CC0ED1000FF866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFBDCE2727CC0ED1000FF866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFBDCE2827CC0ED1000FF866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFBDCE2A27CC0ED1000FF866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LensMovies/Preview Content\"";
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LensMovies/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFBDCE2B27CC0ED1000FF866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LensMovies/Preview Content\"";
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LensMovies/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFBDCE2D27CC0ED1000FF866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensMovies.app/LensMovies";
+			};
+			name = Debug;
+		};
+		AFBDCE2E27CC0ED1000FF866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensMovies.app/LensMovies";
+			};
+			name = Release;
+		};
+		AFBDCE3027CC0ED1000FF866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LensMovies;
+			};
+			name = Debug;
+		};
+		AFBDCE3127CC0ED1000FF866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD33ZR6EU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iNube.LensMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LensMovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFBDCE0027CC0EC6000FF866 /* Build configuration list for PBXProject "LensMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBDCE2727CC0ED1000FF866 /* Debug */,
+				AFBDCE2827CC0ED1000FF866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBDCE2927CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBDCE2A27CC0ED1000FF866 /* Debug */,
+				AFBDCE2B27CC0ED1000FF866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBDCE2C27CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBDCE2D27CC0ED1000FF866 /* Debug */,
+				AFBDCE2E27CC0ED1000FF866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBDCE2F27CC0ED1000FF866 /* Build configuration list for PBXNativeTarget "LensMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBDCE3027CC0ED1000FF866 /* Debug */,
+				AFBDCE3127CC0ED1000FF866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFBDCE3827CC10CD000FF866 /* LensMovies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFBDCE3927CC10CD000FF866 /* LensMovies.xcdatamodel */,
+			);
+			currentVersion = AFBDCE3927CC10CD000FF866 /* LensMovies.xcdatamodel */;
+			path = LensMovies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFBDCDFD27CC0EC6000FF866 /* Project object */;
+}
